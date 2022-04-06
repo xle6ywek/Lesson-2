@@ -10,50 +10,39 @@
     <title>Bootstrap</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="container-fluid bg-primary">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-2">
-                <div class="row text-light">
-                    <div class="btn-group align-items-center" role="group">
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-lg fs-5 px-2">Navbar</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary btn-lg fs-6 px-2">Home</button>
-                        </div>
-                        <div class="col">
-                            <button type="button"
-                                class="btn btn-primary btn-lg fs-6 px-2 text-white-50">Features</button>
-                        </div>
-                        <div class="col">
-                            <button type="button"
-                                class="btn btn-primary btn-lg fs-6 px-2 text-white-50">Pricing</button>
-                        </div>
-                        <div class="col">
-                            <div class="dropdown">
-                                <div type="button" class="btn btn-primary dropdown-toggle text-white-50"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown link
-                                </div>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li>
-                                        <a class="dropdown-item" href="#">First element</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Second element</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Third element</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <nav class="navbar ps-5 navbar-expand-lg navbar-dark ">
+            <div class="container ">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
 
     <main class="container mt-5 pt-4">
@@ -63,8 +52,8 @@
             <div class="col text-muted">fugit ratione dicta mollitia.</div>
         </div>
 
-        <div class="card-group mt-5 justify-content-around">
-            <div class="card mx-3 shadow bg-body rounded">
+        <div class="card-group mt-5 ">
+            <div class="card mx-xs-4 me-md-1 shadow bg-body rounded">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body ">
                     <div class="badge bg-primary">News</div>
@@ -75,7 +64,7 @@
                     <p class="card-text mt-4"><small class="text-muted ">March 12, 2022 • 6 min read</small></p>
                 </div>
             </div>
-            <div class="card mx-3 shadow bg-body rounded">
+            <div class="card mx-4 mx-md-5 shadow bg-body rounded">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="badge bg-primary">Media</div>
@@ -87,7 +76,7 @@
                     <p class="card-text mt-4"><small class="text-muted">March 23, 2022 • 4 min read</small></p>
                 </div>
             </div>
-            <div class="card mx-3 shadow bg-body rounded">
+            <div class="card mx-4 ms-md-1  shadow bg-body rounded">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="badge bg-primary">News</div>
@@ -100,24 +89,35 @@
             </div>
         </div>
 
-        <div class=" bg-primary rounded mt-5">
-            <div class="container-fluid row text-white">
-                <p class="navbar-brand col" >uis suscipit?</p>
+        <div class="bg-primary container rounded mt-5 d-flex justify-content-between align-items-center">
+            <div class="container-fluid row flex-column p-4 text-white w-50">
+                <p class="navbar-brand fw-bold fs-3 col" >New products, delivered to you.</p>
+                <p class="fs-6 col">Sign up for the our newsletter of the latest updates.</p>
+            </div>
+            <div class="p-5">
                 <form class="d-flex justify-content-between col">
-                    <input class="form-control me-2" type="email" placeholder="Email adress..." aria-label="Email adress">
-                    <button class="btn btn-bg-primary btn-outline-light" type="submit">Sign</button>
+                    <input class="form-control" type="email" placeholder="Email adress..." aria-label="Email adress">
+                    <button class="btn btn-bg-primary btn-outline-light w-50" type="submit">Sign up</button>
                 </form>
             </div>
         </div>
 
     </main>
-    
-    <footer class="container-fluid bg-dark bg-gradient position-absolute bottom-0">
-        <div class="row">
-            <div class="col-6 py-4"></div>
-            <div class="col-6"></div>
+
+    <footer class="bd-footer bg-dark bg-gradient mt-auto ">
+        <div class="d-flex container flex-wrap justify-content-between align-items-center text-white py-3">
+            <div class="d-flex col-8">
+                Copyright © Your website 2022
+            </div>
+            <ul class="d-flex col-4s justify-content-end list-unstyled mb-0">
+                <li class="ms-3"><a href="#" class="text-white">Privacy</a></li>
+                <li class="ms-3">•</li>
+                <li class="ms-3"><a href="#" class="text-white">Terms</a></li>
+                <li class="ms-3">•</li>
+                <li class="ms-3"><a href="#" class="text-white">Contacts</a></li>
+            </ul>
         </div>
     </footer>
+        
 </body>
-
 </html>
