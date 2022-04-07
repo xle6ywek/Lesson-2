@@ -12,7 +12,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <header class="container-fluid bg-primary">
-        <nav class="navbar ps-5 navbar-expand-lg navbar-dark ">
+        <nav class="navbar ps-sm-5 navbar-expand-lg navbar-dark ">
             <div class="container ">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,15 +45,15 @@
           </nav>
     </header>
 
-    <main class="container mt-5 pt-4">
-        <div class="row flex-column text-center">
-            <div class="col fw-bold fs-3">From our blog</div>
-            <div class="col text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque</div>
-            <div class="col text-muted">fugit ratione dicta mollitia.</div>
+    <main class="container-fluid my-5 pt-4">
+        <div class="row text-center">
+            <div class="col-12 fw-bold fs-3">From our blog</div>
+            <div class="col-sm-4 col-2"></div>
+            <div class="col-sm-4 col-8 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fugit ratione dicta mollitia.</div>
         </div>
 
-        <div class="card-group mt-5 ">
-            <div class="card mx-xs-4 me-md-1 shadow bg-body rounded">
+        <div class="card-group container py-5 ">
+            <div class="card m-md-0 m-4 shadow bg-body rounded ">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body ">
                     <div class="badge bg-primary">News</div>
@@ -64,7 +64,7 @@
                     <p class="card-text mt-4"><small class="text-muted ">March 12, 2022 • 6 min read</small></p>
                 </div>
             </div>
-            <div class="card mx-4 mx-md-5 shadow bg-body rounded">
+            <div class="card mx-md-5 my-md-0 m-4 shadow bg-body rounded ">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="badge bg-primary">Media</div>
@@ -76,7 +76,7 @@
                     <p class="card-text mt-4"><small class="text-muted">March 23, 2022 • 4 min read</small></p>
                 </div>
             </div>
-            <div class="card mx-4 ms-md-1  shadow bg-body rounded">
+            <div class="card m-md-0 m-4 shadow bg-body rounded ">
                 <img src="https://dummyimage.com/600x350" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="badge bg-primary">News</div>
@@ -89,33 +89,38 @@
             </div>
         </div>
 
-        <div class="bg-primary container rounded mt-5 d-flex justify-content-between align-items-center">
-            <div class="container-fluid row flex-column p-4 text-white w-50">
-                <p class="navbar-brand fw-bold fs-3 col" >New products, delivered to you.</p>
-                <p class="fs-6 col">Sign up for the our newsletter of the latest updates.</p>
-            </div>
-            <div class="p-5">
-                <form class="d-flex justify-content-between col">
-                    <input class="form-control" type="email" placeholder="Email adress..." aria-label="Email adress">
-                    <button class="btn btn-bg-primary btn-outline-light w-50" type="submit">Sign up</button>
-                </form>
-            </div>
+        <div class=" container my-5">
+            <div class="row bg-primary bg-gradient rounded p-4 mx-sm-auto mx-4 ">
+                <div class="col-md-8 p-2 text-white text-center text-md-start">
+                    <div class=" fw-bold fs-3 col">New products, delivered to you.</div>
+                    <div class="fs-6 col">Sign up for the our newsletter of the latest updates.</div>
+                </div>
+                <div class="d-flex col-md-4 p-2 align-items-center">
+                    <form class="d-flex col">
+                        <input class="form-control rounded-top" type="email" placeholder="Email adress..." aria-label="Email adress">
+                        <button class="btn btn-bg-primary btn-outline-light w-50 rounded-start-0" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>    
         </div>
 
     </main>
 
-    <footer class="bd-footer bg-dark bg-gradient mt-auto ">
-        <div class="d-flex container flex-wrap justify-content-between align-items-center text-white py-3">
-            <div class="d-flex col-8">
-                Copyright © Your website 2022
+    <footer class="  bg-dark bg-gradient mt-auto ">
+        <div class="container text-white pb-3 pt-4">
+            <div class="row">
+                <div class="text-sm-start text-center col-sm col-12">
+                    Copyright © Your website 2022
+                </div>
+                <ul class="d-flex justify-content-center justify-content-sm-end col-sm col-12 list-unstyled">
+                    <li><a href="#" class="text-white">Privacy</a></li>
+                    <li class="ms-2">•</li>
+                    <li class="ms-2"><a href="#" class="text-white">Terms</a></li>
+                    <li class="ms-2">•</li>
+                    <li class="ms-2"><a href="#" class="text-white">Contacts</a></li>
+                </ul>
             </div>
-            <ul class="d-flex col-4s justify-content-end list-unstyled mb-0">
-                <li class="ms-3"><a href="#" class="text-white">Privacy</a></li>
-                <li class="ms-3">•</li>
-                <li class="ms-3"><a href="#" class="text-white">Terms</a></li>
-                <li class="ms-3">•</li>
-                <li class="ms-3"><a href="#" class="text-white">Contacts</a></li>
-            </ul>
+            
         </div>
     </footer>
         
